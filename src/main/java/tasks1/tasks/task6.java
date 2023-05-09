@@ -23,7 +23,6 @@ public class task6 {
 
                 }
             }
-            sb.append(arr[i] + "-" + a);
 
             System.out.println(arr[i] + "-" + a);
         }
