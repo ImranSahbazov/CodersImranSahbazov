@@ -5,14 +5,27 @@ import java.util.Scanner;
 
 public class LoginSignup {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
 
-        User[] users = new User[3];
+
+        User user[]=new User[5];
+           user[0]= Login("imransahbazov@446gmail.com","Ps@sw0rd");
+
+           user[1]= Login("imransahfdsdsf@46gmail.com", "P@sssdfsdw0rd");
+
+        System.out.println(Arrays.toString(user));
+
+
+    }
+    public static User Login(String email, String password){
+
+
+        User user = null;
         try {
-            users[0] = new User("imransahbazov@446gmail.com", "Ps@sw0rd");
+              user=new User(email,password);
+            System.out.println("ugurla login oldunuz");
 
-            users[1] = new User("imransahfdsdsf@46gmail.com", "P@sssdfsdw0rd");
+
 
         } catch (wrongEmailException e) {
             e.printStackTrace();
@@ -22,8 +35,6 @@ public class LoginSignup {
             System.out.println("password qaydalarina dogru riayet etmemisiz");
         }
 
-
-        System.out.println(Arrays.toString(users));
-
+        return user;
     }
 }
