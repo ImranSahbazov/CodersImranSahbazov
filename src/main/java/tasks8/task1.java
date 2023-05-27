@@ -1,8 +1,6 @@
 package tasks8;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+
 public class task1 {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
@@ -13,6 +11,8 @@ public class task1 {
         list.add(2);
         list.add(5);
         list.add(3);
+
+
 
         List<Integer> newList = tekrarlariSil(list);
         System.out.println(newList);
