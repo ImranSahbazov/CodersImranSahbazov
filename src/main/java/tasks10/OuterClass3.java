@@ -2,7 +2,7 @@ package tasks10;
 
 public class OuterClass3 {
 
- class InnerClassAnonim implements Tasks10.InnerClass {
+ class InnerClassAnonim implements InnerClass {
 
      @Override
      public void method() {
