@@ -24,3 +24,7 @@ public class StringdekiPalindrom {
         return true;
     }
 }
+
+
+
+
